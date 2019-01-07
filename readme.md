@@ -13,4 +13,4 @@
 - gulp-tinypng
 - gulp-autoprefixer
 - browser-sync
-- browsersync-iis
+- browsersync-ssi
