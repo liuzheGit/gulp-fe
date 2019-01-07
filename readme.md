@@ -11,3 +11,6 @@
 - gulp-sass
 - gulp-clean-css
 - gulp-tinypng
+- gulp-autoprefixer
+- browser-sync
+- browsersync-iis

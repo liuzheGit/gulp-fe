@@ -15,4 +15,4 @@ const L = new Person({name: 'ldifd', age: 18})
 
 L.say();
 
-console.lo('fdjkfd')
+console.log('fdjkfd')

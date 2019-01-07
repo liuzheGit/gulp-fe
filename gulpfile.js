@@ -13,6 +13,30 @@ const autoprefixer = require('gulp-autoprefixer');
 // 压缩图片
 const tinypng = require('gulp-tinypng');
 
+
+// server
+const browserSync = require('browser-sync').create();
+const SSI = require('browsersync-ssi');
+
+gulp.task('serve', function(){
+  browserSync.init({
+    server: {
+      baseDir: ["./"],
+      middleware: [
+        SSI({
+          baseDir: './',
+          ext: '.html'
+        })
+      ]
+    }
+  });
+
+  gulp.watch('src/scss/*.scss', gulp.series('sass'));
+  gulp.watch('src/js/*.js', gulp.series('compress'));
+
+  console.log('监听中...');
+})
+
 // watch   scss  转 css
 gulp.task('sass', function(){
    return gulp.src('src/scss/*.scss')
