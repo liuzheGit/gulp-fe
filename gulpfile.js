@@ -11,7 +11,6 @@ const sass = require('gulp-sass');
 const cleanCSS = require('gulp-clean-css');
 // 压缩图片
 const tinypng = require('gulp-tinypng');
-const myKey = 'EEr7GcvNBNDyUVEfkgX1jYpUtQ6eGkH6';
 
 // watch   scss  转 css
 gulp.task('sass', function(){
