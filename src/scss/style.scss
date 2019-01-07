@@ -6,3 +6,26 @@ body{
     color: purple;
   }
 }
+
+
+.container{
+  transform: translate(-50px);
+  border: 1px soild red;
+}
+
+
+.flexed{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@keyframes add{
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 0.8;
+  }
+}

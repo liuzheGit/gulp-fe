@@ -9,13 +9,18 @@ const pump = require('pump');
 // scss转css  和 压缩
 const sass = require('gulp-sass');
 const cleanCSS = require('gulp-clean-css');
+const autoprefixer = require('gulp-autoprefixer');
 // 压缩图片
 const tinypng = require('gulp-tinypng');
 
 // watch   scss  转 css
 gulp.task('sass', function(){
    return gulp.src('src/scss/*.scss')
-    .pipe(sass(''))
+    .pipe(sass())
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+      cascade: false
+    }))
     .pipe(gulp.dest('dist/css'));
 })
 
