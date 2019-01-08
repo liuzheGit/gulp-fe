@@ -34,6 +34,10 @@ gulp.task('serve', function(){
   gulp.watch('src/scss/*.scss', gulp.series('sass'));
   gulp.watch('src/js/*.js', gulp.series('compress'));
 
+  gulp.watch('index.html').on('change', browserSync.reload);
+  gulp.watch('dist/js/*.js').on('change', browserSync.reload);
+  gulp.watch('dist/css/*.css').on('change', browserSync.reload);
+
   console.log('监听中...');
 })
 
