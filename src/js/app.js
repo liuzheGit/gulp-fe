@@ -11,8 +11,8 @@ Person.prototype.say = function(){
 
 const L = new Person({name: 'ldifd', age: 18})
 
-
-
-L.say();
-
-console.log('fdjkfd')
+let url = 'https://jsonplaceholder.typicode.com/todos/2';
+fetch(url).then( res => res.json())
+  .then(json => {
+    console.log(json);
+  })
