@@ -1,0 +1,178 @@
+$white: #fff;
+
+$purple: #a874e1;
+
+$pink: #FA6CB0;
+$red: #FE0000;
+$orange: #FEA500;
+$yellow: #FFFF01;
+$cyan: #3FE0D0;
+$blue: #400097;
+
+$darkgray: #464646;
+$normalgray: #3C3C3C;
+$activegray: #2E2E2E;
+$words: #A6A6A6;
+
+body{
+  background: $darkgray;
+}
+header{
+  color: $white;
+  background: $purple;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px 0 6px;
+  .left{
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    .logo{
+      margin-right: 4px;
+      .logo-content{
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border: 2px solid;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 30px;
+        font-size: 26px;
+      }
+    }
+  }
+  .right{
+    display: flex;
+    align-items: center;
+    .iconfont{
+      margin-left: 12px;
+      font-size: 20px;
+    }
+  }
+}
+
+.changeColor{
+  height: 20px;
+  ul{
+    height: 100%;
+    display: flex;
+    li{
+      flex:1;
+      border: 1px solid #000;
+    }
+    :nth-child(1){
+      background: $pink;
+    }
+    :nth-child(2){
+      background: $red;
+    }
+    :nth-child(3){
+      background: $orange;
+    }
+    :nth-child(4){
+      background: $yellow;
+    }
+    :nth-child(5){
+      background: $cyan;
+    }
+    :nth-child(6){
+      background: $blue;
+    }
+    :nth-child(7){
+      background: $purple;
+    }
+  }
+}
+
+.tabs-nav{
+  height: 46px;
+  display: flex;
+  align-items: center;
+  .iconfont{
+    height: 100%;
+    font-size: 32px;
+    padding: 6px;
+    color: $words;
+    background: $normalgray;
+    &.active{
+      background: $activegray;
+    }
+  }
+}
+
+.tabs-content{
+  height: 300px;
+  color: $white;
+}
+
+.params{
+  .params-tabs{
+    display: flex;
+    color: $words;
+    height: 40px;
+    font-size: 22px;
+    line-height: 40px;
+    span{
+      padding: 0 12px;
+      background: $normalgray;
+      &.active{
+        color: $white;
+        background: #000;
+      }
+    }
+  }
+}
+.params-content ul{
+  li {
+    color: $purple;
+    position: relative;
+    .params-title{
+      height: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 16px 0 4px;
+      .title-words{
+        color: $purple;
+        .iconfont{
+        color: $white;
+          margin-right: 6px;
+        }
+      }
+    }
+    &:nth-child(2n+1) .params-title{
+      background: $normalgray;
+    }
+  }
+}
+
+.content-main{
+  border: 1px solid #7E7E7E;
+  &.active{
+    display: block;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
