@@ -1,0 +1,88 @@
+input[type=range] {
+    -webkit-appearance: none;
+    width: 300px;
+    border-radius: 10px; /*这个属性设置使填充进度条时的图形为圆角*/
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+} 
+
+input[type=range]::-webkit-slider-runnable-track {
+    height: 2px;
+    background: black;/*轨道内置阴影效果*/
+}
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 12px;
+    width: 12px;
+    margin-top: -5px; /*使滑块超出轨道部分的偏移量相等*/
+    background: #ffffff; 
+    border-radius: 50%; /*外观设置为圆形*/
+    border: 3px solid black;
+}
+
+
+// checkbox
+
+.al-toggle-button{
+  appearance: none;
+  position: relative;
+  width: 40px;
+  height: 14px;
+  // background: #dfdfdf;
+  background: #000000;
+  border-radius: 7px;
+  // border: 1px solid #dfdfdf;
+  outline: 0;
+  box-sizing: border-box;
+}
+.al-toggle-button:checked{
+  border-color: #A672DE;
+  background-color: #A672DE;
+}
+.al-toggle-button:before, .al-toggle-button:after{
+  content: " ";
+  position: absolute;
+  top: -2px;
+  left: -4px;
+  height: 16px;
+  border-radius: 50%;
+  transition: transform 0.3s;
+
+}
+.al-toggle-button:before{
+  width: 16px;
+  background-color: #fdfdfd;
+}
+.al-toggle-button:after{
+  width: 16px;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+.al-toggle-button:checked:before{
+  transform: scale(0);
+
+}
+.al-toggle-button:checked:after{
+    transform: translateX(30px);
+}
+
+
+// input text
+.al-input{
+  appearance: none;
+  position: relative;
+  width: 50px;
+  height: 25px;
+  background: #585858;
+  box-shadow: inset 0px 0px 2px 0px #171111;
+  border: 1px solid #dfdfdf;
+  outline: 0;
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
+}

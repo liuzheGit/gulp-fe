@@ -8,6 +8,7 @@
   <link type="favicon" rel="shortcut icon" href="favicon.ico"/>
   <link rel="stylesheet" href="./dist/font/iconfont.css">
   <link rel="stylesheet" href="./dist/css/reset.css">
+  <link rel="stylesheet" href="dist/css/range.css">
   <link rel="stylesheet" href="dist/css/style.css">
 </head>
 <body>
@@ -65,8 +66,17 @@
             </span>
             <span class="iconfont icon-left"></span>
           </div>
-          <div class="content-main">
-            <input type="range">
+          <div class="content-main rooms-number">
+            <div class="rooms-range">
+              <span>8</span><input type="range"><input type="checkbox">
+            </div>
+            <div class="rooms-input">
+              <ul>
+                <li><label for="">卧室</label><span><input type="text" value="3" class="al-input">室</span></li>
+                <li><label for="">客厅</label><span><input type="text" value="1" class="al-input">厅</span></li>
+                <li><label for="">餐厅</label><span><input type="text" value="1" class="al-input">厅</span></li>
+                <li><label for="">卫生间</label><span><input type="text" value="2" class="al-input">卫</span></li>
+            </div>
           </div>
         </li>
 
@@ -78,8 +88,46 @@
             </span>
             <span class="iconfont icon-left"></span>
           </div>
-          <div class="content-main">
-            22222222222
+          <div class="content-main rooms-relation">
+            <div class="relation-section">
+              <div class="section-title">
+                <input type="checkbox" checked class="al-toggle-button">
+                <input type="text" class="al-input" value="客厅"><span class="vs-words">vs</span><input type="text" value="主卧" class="al-input">
+              </div>
+              <div class="section-buttons">
+                <p>主从<input type="checkbox" class="al-toggle-button"></p>
+                <p>分离<input type="checkbox" class="al-toggle-button"></p>
+                <p>相邻<input type="checkbox" checked class="al-toggle-button"></p>
+              </div>
+            </div>
+            <div class="relation-section">
+              <div class="section-title">
+                <input type="checkbox" checked class="al-toggle-button">
+                <input type="text" class="al-input" value="客厅"><span class="vs-words">vs</span><input type="text" value="主卧" class="al-input">
+              </div>
+              <div class="section-buttons">
+                <p>主从<input type="checkbox" class="al-toggle-button"></p>
+                <p>分离<input type="checkbox" checked class="al-toggle-button"></p>
+                <p>相邻<input type="checkbox" class="al-toggle-button"></p>
+              </div>
+            </div>
+            <div class="relation-section">
+              <div class="section-title">
+                <input type="checkbox" checked class="al-toggle-button">
+                <input type="text" class="al-input" value="主卧"><span class="vs-words">vs</span><input type="text" value="主卫" class="al-input">
+              </div>
+              <div class="section-buttons">
+                <p>主从<input type="checkbox" checked class="al-toggle-button"></p>
+                <p>分离<input type="checkbox" class="al-toggle-button"></p>
+                <p>相邻<input type="checkbox" class="al-toggle-button"></p>
+              </div>
+            </div>
+            <div class="relation-section">
+              <div class="section-title">
+                <input type="checkbox" class="al-toggle-button al-add-toggle-button">
+                <input type="text" class="al-input"><span class="vs-words">vs</span><input type="text" class="al-input">
+              </div>
+            </div>
           </div>
         </li>
 
@@ -92,8 +140,13 @@
             </span>
             <span class="iconfont icon-left"></span>
           </div>
-          <div class="content-main">
-            3333333333
+          <div class="content-main windows-ratio">
+            <ul>
+              <li><span class="direction-words">南</span><span>0%</span><input type="range"><span>100%</span></li>
+              <li><span class="direction-words">北</span><span>0%</span><input type="range"><span>100%</span></li>
+              <li><span class="direction-words">东</span><span>0%</span><input type="range"><span>100%</span></li>
+              <li><span class="direction-words">西</span><span>0%</span><input type="range"><span>100%</span></li>
+            </ul>
           </div>
         </li>
 
@@ -106,8 +159,14 @@
             </span>
             <span class="iconfont icon-left"></span>
           </div>
-          <div class="content-main">
-            444444444444
+          <div class="content-main rooms-area">
+            <div>面积<input type="text" class="al-input"></div>
+            <div>进深<input type="text" class="al-input"></div>
+            <div>面宽<input type="text" class="al-input"></div>
+            <div class="al-flex">窗地比 <span>0%</span><input type="range"> <span>100%</span></div>
+            <div>
+              朝向
+            </div>
           </div>
         </li>
       </ul>
