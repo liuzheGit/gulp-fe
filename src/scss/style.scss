@@ -29,8 +29,8 @@ body{
     right: 0;
     z-index: 99;
     .popup-content{
-      width: 300px;
-      margin: 80px auto;
+      width: 88%;
+      margin: 78px auto;
       border: 1px solid $normalgray;
       .popup-title{
         color: $white;
@@ -123,21 +123,13 @@ header{
 }
 // 联系我们
 
-.contact-us{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  .al-input{
-    width: 200px;
-    margin-left: 10px;
-  }
-}
+// .contact-us{
+// }
 
 
 // 搜索
 .all-search-wrap{
-  display: none;
+  // display: none;
   .all-search{
     color: $white;
     display: flex;

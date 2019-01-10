@@ -1,16 +1,3 @@
-
-  // $('.params-content .params-title').on('click',function(){
-  //   console.log($(this));
-  // //   if($(this).find('.icon-left')){
-  // //     $(this).find('.icon-left').removeClass('icon-left').addClass('icon-left1')
-  // //   }
-  // //   if($(this).find('.icon-left1')){
-  // //     $(this).find('.icon-left1').removeClass('icon-left1').addClass('icon-left')
-  // //   }
-  // //   var $index = $(this).index();
-  // //   $('.content-main').eq($index).toggleClass('active');
-  // })
-
   $(function(){
     var $pink = '#FA6CB0';
     var $red = '#FE0000';
@@ -36,7 +23,10 @@
     })
 
     $('.tabs-nav .iconfont').click(function(){
+      $('.changeColor').removeClass('active');
       var $index = $(this).index();
+        $('.main-popup').find('.popup-title').html('Perspective');
+        $('.main-popup').find('.popup-words').html('3D model of the same plan');
       if($index < 2){
         $('.main-popup').show();
         setTimeout(function(){
@@ -44,11 +34,22 @@
         }, 1000);
       }
       if($index === 2){
-        $('.changeColor').toggleClass('active')
-      }else if($index === 6){
-        $('.all-search-wrap').toggleClass('active')
+        if($('.changeColor').hasClass('active')){
+          $('.changeColor').removeClass('active');
+        }else{
+          $('.changeColor').addClass('active');
+        }
+        
+      }else if($index === 5){
+        $('.main-popup').find('.popup-title').html('联系我们');
+        $('.main-popup').find('.popup-words').html('150xxxxxxxx');
+        $('.main-popup').addClass('slideInDown').show();
+        setTimeout(function(){
+          $('.main-popup').removeClass('slideInDown').hide();
+        }, 3000);
+      // }else if($index === 6){ $('.all-search-wrap').toggleClass('active');
       }else{
-        $('.tabs-content-item').removeClass('active').eq($index).addClass('active')
+        $('.tabs-content-item').removeClass('active').eq($index).addClass('active');
       }
       $(this).addClass('active').siblings().removeClass('active');
     })
