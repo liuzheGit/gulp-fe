@@ -18,6 +18,7 @@ $.fn.RangeSlider = function(cfg){
 
     $input.bind("input", function(e){
         $input.attr('value', this.value);
+        $(this).siblings('.range-val').html(this.value);
         $input.css( 'background', 'linear-gradient(to right, #059CFA, white ' + this.value + '%, white)' );
 
         if ($.isFunction(callback)) {
@@ -28,7 +29,7 @@ $.fn.RangeSlider = function(cfg){
 
 var change = function(){
 //   $('input').css( 'background-size', this.value + '% 100%' ); 
-  console.log($('input').val());
+//   console.log($(this).val());
 }
-
-$('input').RangeSlider({ min: 0,   max: 100,  step: 0.1,  callback: change});
+$('input[type="range"]').RangeSlider({ min: 0,   max: 100,  step: 1,  callback: change});
+$('.rooms-range input[type="range"]').RangeSlider({min: 1, max: 10, step: 1});

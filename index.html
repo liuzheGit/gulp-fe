@@ -81,13 +81,16 @@
         </div>
       </div>
       <div class="tabs-content-item">
-        3333
       </div>
       <div class="tabs-content-item">
-        详细信息
+        <div class="content-center">
+          <p>详细信息</p>
+        </div>
       </div>
       <div class="tabs-content-item">
-        插件安装
+        <div class="content-center">
+          <p>插件安装</p>
+        </div>
       </div>
       <div class="tabs-content-item animated slideInDown">
         <div class="contact-us">
@@ -97,7 +100,7 @@
       </div>
       <div class="tabs-content-item all-search-wrap">
         <div class="all-search">
-          <span>搜索</span><input type="text" class="al-input"><span class="iconfont icon-sousuo"></span>
+          <span class="iconfont icon-sousuo"></span><input type="text" class="al-input"><a class="all-search-button" href="javascript:void(0)">搜索</a>
         </div>
       </div>
     </div>
@@ -119,7 +122,7 @@
               </div>
               <div class="content-main rooms-number">
                 <div class="rooms-range">
-                  <span>8</span><input type="range"><input type="checkbox">
+                  <span class="range-val">8</span><input type="range"><input type="checkbox">
                 </div>
                 <div class="rooms-input">
                   <ul>
@@ -192,14 +195,15 @@
                   <span class="iconfont icon-chicun"></span>
                   窗墙比
                 </span>
+                <input type="text" value="50%" class="windows-ratio-input">
                 <span class="iconfont icon-left"></span>
               </div>
               <div class="content-main windows-ratio">
                 <ul>
-                  <li><span class="direction-words">南</span><span>0%</span><input type="range"><span>100%</span></li>
-                  <li><span class="direction-words">北</span><span>0%</span><input type="range"><span>100%</span></li>
-                  <li><span class="direction-words">东</span><span>0%</span><input type="range"><span>100%</span></li>
-                  <li><span class="direction-words">西</span><span>0%</span><input type="range"><span>100%</span></li>
+                  <li><span class="direction-words">南</span><span>0%</span><input type="range"><span class="range-val">100</span>%</li>
+                  <li><span class="direction-words">北</span><span>0%</span><input type="range"><span class="range-val">100</span>%</li>
+                  <li><span class="direction-words">东</span><span>0%</span><input type="range"><span class="range-val">100</span>%</li>
+                  <li><span class="direction-words">西</span><span>0%</span><input type="range"><span class="range-val">100</span>%</li>
                 </ul>
               </div>
             </li>
@@ -217,7 +221,7 @@
                 <div>面积<input type="text" class="al-input"></div>
                 <div>进深<input type="text" class="al-input"></div>
                 <div>面宽<input type="text" class="al-input"></div>
-                <div class="al-flex">窗地比 <span>0%</span><input type="range"> <span>100%</span></div>
+                <div class="al-flex">窗地比 <span>0%</span><input type="range"><span class="range-val">100</span>%</div>
                 <div class="area-direction">
                   <span class="area-key">朝向</span>
                   <div class="area-value">
@@ -234,6 +238,9 @@
               </div>
             </li>
           </ul>
+          <div class="params-search">
+            <p><a href="javascript:void(0)">查询</a></p>
+          </div>
         </div>
         <div class="params-content">
 
@@ -243,6 +250,7 @@
   </div>
   <script src="./dist/js/jquery.min.js"></script>
   <script src="./dist/js/swiper.min.js"></script>
+  <script src="./dist/js/range.js"></script>
   <script src="./dist/js/app.js"></script>
   <script>        
   var mySwiper = new Swiper ('.swiper-container', {

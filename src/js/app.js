@@ -46,7 +46,7 @@
         $('.main-popup').addClass('slideInDown').show();
         setTimeout(function(){
           $('.main-popup').removeClass('slideInDown').hide();
-        }, 3000);
+        }, 2000);
       // }else if($index === 6){ $('.all-search-wrap').toggleClass('active');
       }else{
         $('.tabs-content-item').removeClass('active').eq($index).addClass('active');
@@ -84,6 +84,18 @@
         $target.addClass('active');
         $(this).find('.icon-left').removeClass('icon-left').addClass('icon-left1')
       }
+    })
+
+    $('.params .params-title').eq(2).click(function(){
+      if($(this).siblings().hasClass('active')){
+        $(this).find('.windows-ratio-input').show();
+      }else{
+        $(this).find('.windows-ratio-input').hide()
+      }
+    });
+
+    $('.windows-ratio-input').click(function(e){
+      e.stopPropagation();
     })
 
 
