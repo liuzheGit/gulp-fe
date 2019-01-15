@@ -91,19 +91,17 @@ header {
       -ms-flex: 1;
       flex: 1; }
     .changeColor ul :nth-child(1) {
-      background: #1c1c1c; }
+      background: #0078D7; }
     .changeColor ul :nth-child(2) {
-      background: #333; }
+      background: #00B7C3; }
     .changeColor ul :nth-child(3) {
-      background: #626262; }
+      background: #E81123; }
     .changeColor ul :nth-child(4) {
-      background: #bfbfbf; }
+      background: #FFB900; }
     .changeColor ul :nth-child(5) {
-      background: #3FE0D0; }
+      background: #E3008C; }
     .changeColor ul :nth-child(6) {
-      background: #400097; }
-    .changeColor ul :nth-child(7) {
-      background: #a874e1; }
+      background: #10893E; }
 
 .all-search-wrap .all-search {
   color: #fff;

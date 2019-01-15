@@ -102,26 +102,24 @@ header{
       flex:1;
     }
     // #1c1c1c #333 #626262 #bfbfbf
+    // ['#0078D7','#00B7C3','#E81123','#FFB900','#E3008C','#10893E']
     :nth-child(1){
-      background: #1c1c1c;
+      background: #0078D7;
     }
     :nth-child(2){
-      background: #333;
+      background: #00B7C3;
     }
     :nth-child(3){
-      background: #626262;
+      background: #E81123;
     }
     :nth-child(4){
-      background: #bfbfbf;
+      background: #FFB900;
     }
     :nth-child(5){
-      background: $cyan;
+      background: #E3008C;
     }
     :nth-child(6){
-      background: $blue;
-    }
-    :nth-child(7){
-      background: $purple;
+      background: #10893E;
     }
   }
 }

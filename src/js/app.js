@@ -7,7 +7,8 @@
     var $blue = '#400097';
     var $purple = '#a874e1';
     // var colorArr = [$pink, $red, $orange, $yellow, $cyan, $blue, $purple];
-    var colorArr = ['#1c1c1c', '#333', '#626262', '#bfbfbf']
+    // var colorArr = ['#1c1c1c', '#333', '#626262', '#bfbfbf'];
+    var colorArr = ['#0078D7', '#00B7C3', '#E81123', '#FFB900', '#E3008C', '#10893E'];
 
     $('.changeColor li').click(function(){
       var $index = $(this).index();
