@@ -1,10 +1,6 @@
 body {
   background: #464646; }
 
-a {
-  text-decoration: none;
-  color: #a874e1; }
-
 .main {
   max-width: 750px;
   margin: 0 auto;
@@ -16,8 +12,8 @@ a {
     right: 0;
     z-index: 99; }
     .main .main-popup .popup-content {
-      width: 86%;
-      margin: 75px auto;
+      width: 88%;
+      margin: 78px auto;
       border: 1px solid #3C3C3C; }
       .main .main-popup .popup-content .popup-title {
         color: #fff;
@@ -91,13 +87,13 @@ header {
       -ms-flex: 1;
       flex: 1; }
     .changeColor ul :nth-child(1) {
-      background: #0078D7; }
+      background: #1c1c1c; }
     .changeColor ul :nth-child(2) {
-      background: #00B7C3; }
+      background: #333; }
     .changeColor ul :nth-child(3) {
-      background: #E81123; }
+      background: #626262; }
     .changeColor ul :nth-child(4) {
-      background: #FFB900; }
+      background: #bfbfbf; }
     .changeColor ul :nth-child(5) {
       background: #E3008C; }
     .changeColor ul :nth-child(6) {
@@ -121,12 +117,6 @@ header {
     margin: 0 5px 0 10px;
     text-align: left;
     padding-left: 5px; }
-  .all-search-wrap .all-search .all-search-button {
-    color: white;
-    border: 1px solid #fff;
-    padding: 4px 8px; }
-  .all-search-wrap .all-search .iconfont {
-    font-size: 20px; }
 
 .all-search-wrap.active {
   display: block; }
@@ -153,10 +143,6 @@ header {
   position: relative; }
   .tabs-content .tabs-content-item {
     display: none; }
-    .tabs-content .tabs-content-item .content-center {
-      padding: 10px; }
-      .tabs-content .tabs-content-item .content-center p {
-        text-align: center; }
     .tabs-content .tabs-content-item.active {
       display: block; }
     .tabs-content .tabs-content-item .item-title {
@@ -204,7 +190,7 @@ header {
   .params-content ul li {
     position: relative; }
     .params-content ul li .params-title {
-      height: 40px;
+      height: 30px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -221,11 +207,6 @@ header {
       .params-content ul li .params-title .title-words .iconfont {
         color: #fff;
         margin-right: 6px; }
-    .params-content ul li .windows-ratio-input {
-      width: 100px;
-      outline: none;
-      padding: 0 10px;
-      display: none; }
     .params-content ul li:nth-child(2n+1) .params-title {
       background: #3C3C3C; }
 
@@ -275,7 +256,7 @@ header {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin: 18px 0;
+  margin: 5px 0;
   color: #fff; }
   .windows-ratio li .direction-words {
     margin-right: 5px; }
@@ -347,16 +328,3 @@ header {
       line-height: 1.5; }
     .rooms-area .area-direction .area-value .al-toggle-button {
       margin-left: 10px; }
-
-.params-content .params-search {
-  margin: 20px 0 50px; }
-  .params-content .params-search p {
-    text-align: center; }
-    .params-content .params-search p a {
-      display: inline-block;
-      width: 80%;
-      margin: 0 auto;
-      padding: 10px 0;
-      border-radius: 4px;
-      background: #a874e1;
-      color: white; }
